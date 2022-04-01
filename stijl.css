@@ -1,0 +1,199 @@
+body {
+	color: #10dddd;    
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: rgb(2, 35, 26);
+}
+
+main{    
+    margin: 5vh 2vw; 
+}
+
+h1{ 
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    color:rgb(228, 228, 228);
+}
+
+h3{
+    margin: 0px;
+}
+
+#map {
+    height: 35vh;
+    width: 100%;
+    margin: 0%;
+}
+
+#honden {
+	max-width: 300px;
+    height:300px;
+}
+
+.kaart, .weer, .hondenshow {
+    padding: 10px;
+    border-radius: 1px;
+}
+
+.weer{
+    border: 1px solid rgb(228, 228, 228);
+}
+.hondenshow{
+    border: 1px solid rgb(228, 228, 228);
+}
+
+#weather{
+	background-color: #095d5d;
+    font-size: 30px;
+	width: 125px;
+	padding: 10px;
+	text-align: center;
+    margin: 1px;
+}
+
+#weerButton, #fotoButton {
+    font-family: Arial;
+    margin-top: 100px;
+    height: 50px;
+    width: 80px;
+    background-color: #095d5d;
+    color: rgb(222, 226, 227);
+}
+
+.buttons{
+    position: absolute;
+}
+
+.kaart{
+    grid-area: landing;
+}
+.weer{
+    grid-area: weer;
+}
+.hondenshow{
+    grid-area: foto;
+}
+
+@media only screen and (min-width: 312px) and (max-width: 820px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "landing landing"
+        "weer weer"
+        "foto foto"
+        "text text";
+        gap: 5px;
+    }
+    
+    h1, h3{
+        font-size: 18px;
+    }
+    p {
+        font-size: 10px;
+        display: block;
+    }
+    #map {
+        height: 40vh;
+    }
+    #weather{
+        font-size: 15px;
+        width: 130px;
+    }
+    #balk{
+        height: 25px;
+        width: 250px;
+    }
+    #weerButton, #fotoButton {
+        width: 150px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    #honden {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1023px){
+   
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "landing landing landing"
+        "weer foto foto"
+        "text foto foto";
+        gap: 1px;
+    } 
+  
+    h1, h3{
+        font-size: 35px;
+    }
+    p {
+        font-size: 20px;
+        display: block;
+    }
+    #map {
+        height: 400px;
+    }
+    #weather{
+        font-size: 20px;
+        width: 500px;
+        height: 100px;
+    }
+    #balk{
+        height: 25px;
+        width: 350px;
+    }
+    #weerButton, #fotoButton {
+        width: 170px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    #honden {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+  
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "landing weer"
+    "foto foto";
+    gap: 5px;
+} 
+
+h1, h3{
+    font-size: 50px;
+}
+
+#map {
+    height: 250px;
+}
+
+#weather{
+    font-size: 22px;
+    width: 150px;
+    height: 100px;
+}
+
+#balk {
+    height: 20px;
+    width: 300px;
+}
+
+#weerButton, #fotoButton {
+    width: 160px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#honden {
+    max-width: 500px;
+}
+
+}

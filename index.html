@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge3</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="stijl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" />
+</head>
+
+<body>
+
+        <h1>Internationaal Ruimtevaartuig "Happy Martian"</h1>
+
+    <main>
+       
+        <div class="weer">
+            <h3>Het weer</h3>
+            <p>Typ hier de naam van een stand of van een land.</p>
+            <div id="weather"></div>
+            <input type="text" id="balk">
+            <input type="button" id="weerButton" value="Toon het weer">
+        </div>
+
+        <div class="hondenshow">
+            <h3>Hondenshow:</h3>
+            <h5>Druk op de knop als er niks verschijnt.</h5>
+            <img src="" id="honden" />
+            <div>
+            <input type="button" value="Refresh" id="fotoButton">
+            </div>
+        </div>
+
+        <div class="kaart">
+            <h3>Landingsplekken</h3>
+            <div id="map"></div>
+        </div>
+
+    </main>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+    <script src="actie.js" defer></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+
+</body>
+
+</html>
